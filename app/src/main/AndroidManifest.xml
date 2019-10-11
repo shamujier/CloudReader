@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jingbin.cloudreader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m">
+        <activity android:name=".ui.WebActivity"></activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".ui.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.douban.SlideScrollViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".ui.douban.SlideShadeViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".ui.douban.MovieDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".view.viewbigimage.ViewBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme" />
+        <activity
+            android:name=".view.webview.WebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 打开http或https开头的网页 -->
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.douban.DoubanTopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.douban.BookTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.douban.OneMovieDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".ui.film.child.FilmDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyScrollPage" />
+        <activity
+            android:name=".ui.menu.NavHomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomePageTheme" />
+        <activity
+            android:name=".ui.menu.NavDeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavAdmireActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.douban.BookDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.NavDownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wan.child.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wan.child.ArticleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wan.child.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wan.child.MyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wan.child.CategoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.menu.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.bigimage.BigImagePagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppBigImageThem" /> <!-- 适配Android 7.0, 需要将下方的包名替换为你的app包名 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+
+        <!-- since 3.3.0 Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <!--User defined.  For test only 继承自cn.jpush.android.service.JCommonService-->
+        <service android:name=".jiguang.PushService"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <!--since 3.3.0 接收JPush相关事件-->
+        <receiver android:name=".jiguang.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}"></category>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
