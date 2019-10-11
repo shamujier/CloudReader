@@ -25,14 +25,7 @@ A netease cloud music based UI, using wanandroid、Gank.Io and mtime API develop
 <img width="173" height=“274” src="https://github.com/youlookwhat/CloudReader/blob/master/file/page_menu_01.png"></img>
 <img width="173" height=“274” src="https://github.com/youlookwhat/CloudReader/blob/master/file/page_movie_03.png"></img>-->
 
-#### Gif Preview
 
-![](https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/cloudreader.gif)
-
-## Issues 宝贵意见
-如果有任何问题，请到github的[issue处][21]写上你不明白的地方，也可以通过下面提供的方式联系我，我会及时给予帮助。
-
-If you have any questions, please write to [the issue][21] of making you don't understand of place, also can contact me through here, I will help them in time.
 
 ## Features 特性
 * 1、基本遵循Google Material Design设计风格。                                    
@@ -53,16 +46,10 @@ If you have any questions, please write to [the issue][21] of making you don't u
 * 16、``CoordinatorLayout``+``Behavior``实现标题栏渐变和滑动置顶。                                                                       
 
 
-## See Detail
-> [项目介绍详情](https://github.com/youlookwhat/CloudReader/blob/master/file/Introduction.md) | [细节优化详情](https://github.com/youlookwhat/CloudReader/wiki) | [**版本更新详情(V2.9.5)**](http://jingbin.me/2016/12/30/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97-%E4%BA%91%E9%98%85/)
 
-### Download
-　[火速跳转](https://fir.im/cloudreader)  
-　  ![](https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/download_200.png)                                  
-　　<!--<img width="200" height=“200” src="https://github.com/youlookwhat/CloudReader/blob/master/file/download.png"></img>-->
 　　
 ### Documents 
- - [《云阅》一个仿网易云音乐UI，使用Gank.Io及豆瓣Api开发的开源项目][23]
+ - [《模拟项目》一个仿网易云音乐UI，使用Gank.Io及豆瓣Api开发的开源项目][23]
  - [开发中所遇问题归纳（jar包的具体使用等）][24]
  - [App使用中的常见问题][25]
  - [开源项目CloudReader笔记][26]
@@ -211,92 +198,5 @@ If you have any questions, please write to [the issue][21] of making you don't u
  - 1.书籍详情页面增加自定义元素共享切换动画，并可简单添加需要支持的详情页
  - 2.代码优化
  - 3.其他
-　　
--->
 
 
-## Thanks
- - 我几乎看过了所有关于Android仿网易云音乐的项目与文章，发现大部分做的都不够细致，也没有比较好的内容填充，于是决心自己着手做一个，才有了这个开源项目。这里列出主要参考的内容。
- 
- - 图片来源：[iconfont][6]、UI工程师[Sandawang](https://github.com/Sandawang)和网易云音乐App。
-
- - 主要数据来源：[wanandroid][27]、[Gank.Io][9]、[时光网][10]。
-
- - 使用到的开源库：[glide][11]、[bottomsheet][12]、[nineoldandroids][13]、[rxandroid][14]等等。
-
- 
-### Statement
-感谢[网易云音乐App](https://play.google.com/store/apps/details?id=com.netease.cloudmusic)提供参考，附上[《网易云音乐Android 3.0视觉设计规范文档》](http://www.25xt.com/appdesign/12385.html)。本人是网易云音乐的粉丝，使用了其中的部分素材，并非攻击，如构成侵权请及时通知我修改或删除。大部分数据来自于玩安卓、干货集中营和时光网，一切数据解释权都归张鸿洋、代码家和时光网所有。
- 
-## End
-> 注意：此开源项目仅做学习交流使用，如用到实际项目还需多考虑其他因素，请多多斟酌。如果你觉得不错，对你有帮助，欢迎点个star，follow，也可以帮忙分享给你更多的朋友，或给点赞赏，这是给我们最大的动力与支持。
-> 
-> 捐赠后均会被记录到列表中，可以留下友情链接，起到一定的推广作用。感谢大家的信任，[捐赠列表](https://github.com/youlookwhat/CloudReader/blob/master/file/admire.md)。
-
-
-<img src="https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/Wechat-admire.jpg" width="250" height="250" /><img src="https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/alipay-admire.jpg" width="250" height="250"/>
-    
-<!--<center class="half">-->
-<!--</center>-->
-
-<!--![](https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/Wechat-admire.jpg)![](https://raw.githubusercontent.com/youlookwhat/CloudReader/master/file/alipay-admire.jpg)-->
-
-<!--<img width="200" height=“200” src="https://github.com/youlookwhat/CloudReader/blob/master/file/Wechat-admire.jpeg"></img><img width="200" height=“200” src="https://github.com/youlookwhat/CloudReader/blob/master/file/qq_code.JPG"></img>-->
-
-## About me
- - **QQ：** 770413277
- - **简书：**[Jingbin_](http://www.jianshu.com/users/e43c6e979831/latest_articles)
- - **Blog：**[http://jingbin.me](http://jingbin.me)
- - **Email：** jingbin127@163.com
- - **QQ交流群：**[![](https://img.shields.io/badge/%E7%BE%A4%E5%8F%B7-727379132-orange.svg?style=flat-square)](https://shang.qq.com/wpa/qunwpa?idkey=5685061359b0a767674cd831d8261d36b347bde04cc23746cb6570e09ee5c8aa)
-
-## License
-```
-Copyright (C) 2016 Bin Jing
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
-
-[1]:https://img.shields.io/:license-apache-blue.svg
-[2]:https://www.apache.org/licenses/LICENSE-2.0.html
-[3]:https://img.shields.io/badge/API-19%2B-red.svg?style=flat
-[4]:https://android-arsenal.com/api?level=19
-[30]:https://img.shields.io/badge/release-3.0.0-red.svg
-[31]:https://github.com/youlookwhat/CloudReader/releases
-[32]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg
-[33]:https://github.com/youlookwhat/CloudReader/pulls
-[34]:https://img.shields.io/badge/download-fir.im-blue.svg
-[35]:https://fir.im/cloudreader
-
-[5]:http://jingbin.me/2017/11/23/%E5%BC%80%E5%8F%91%E4%B8%AD%E6%89%80%E9%81%87%E9%97%AE%E9%A2%98%E5%BD%92%E7%BA%B3/
-[6]:http://www.iconfont.cn/plus
-[7]:https://github.com/GiitSmile/ImitateNetEasyCloud
-[8]:https://github.com/forezp/banya
-[9]:https://gank.io/api
-[10]:http://www.mtime.com
-[11]:https://github.com/bumptech/glide
-[12]:https://github.com/Flipboard/bottomsheet
-[13]:https://github.com/JakeWharton/NineOldAndroids
-[14]:https://github.com/ReactiveX/RxAndroid
-[15]:https://github.com/daimajia
-[16]:https://github.com/hongyangAndroid
-[17]:https://github.com/drakeet
-[18]:https://github.com/yang747046912
-
-[21]:https://github.com/youlookwhat/CloudReader/issues
-
-[23]:http://www.jianshu.com/p/69a229fb6e1d
-[24]:http://jingbin.me/2017/11/23/%E5%BC%80%E5%8F%91%E4%B8%AD%E6%89%80%E9%81%87%E9%97%AE%E9%A2%98%E5%BD%92%E7%BA%B3/
-[25]:http://jingbin.me/2016/12/25/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-%E4%BA%91%E9%98%85/
-[26]:https://blog.csdn.net/jingbin_/column/info/34963
-[27]:http://www.wanandroid.com/index
